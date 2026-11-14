@@ -1,0 +1,22 @@
+STOCKFLOW ANDROID - BUILD USING GITHUB
+
+1. Create a GitHub account and create a NEW repository.
+2. Extract this ZIP on your computer.
+3. Open the StockFlow folder. Upload the CONTENTS of that folder to the
+   repository (not the outer ZIP file). Make sure the .github folder is included.
+4. On GitHub, open the repository and select the Actions tab.
+5. Choose "Build StockFlow Android APK" and click "Run workflow".
+   A push that changes files in android/ also starts a build automatically.
+6. Wait for the workflow to finish with a green check mark.
+7. Open the completed workflow run, scroll to Artifacts, and download
+   StockFlow-Scanner-APK. Extract it to get app-debug.apk.
+8. Transfer app-debug.apk to your Android phone and install it.
+   If Android asks, allow installation from that source.
+
+NOTES
+- This workflow builds the Android scanner APK only.
+- It uses JDK 17 and Gradle 8.9 on GitHub's build computer.
+- The APK is a debug/test APK, not a Play Store release.
+- The APK build has not been run/verified in this session.
+- Keep your existing StockFlow folder and database until you have tested
+  the new build and confirmed your data is safe.
